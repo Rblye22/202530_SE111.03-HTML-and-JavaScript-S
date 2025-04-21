@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 5 Form Examples</title>
+    <meta charset="UTF-8">
+    <style>
+        .form {
+            width: 500px;
+            background-color: green;
+        }
+
+        table,
+        thead,
+        tbody,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Week 5 Examples of Form Elements</h1>
+    <input type="text">
+    <input type="button" value="Click Me">
+    <input type="checkbox" name="Click me" id="">
+
+    <form action=""></form>
+    <h2>Form Example 1</h2>
+    <form action="get" method="#" class="form">
+        <label for="First-Name">First Name</label>
+        <input type="text" placeholder="Enter First Name" name="First-Name">
+        <br>
+        <label for="Last-Name">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" name="Last-Name">
+        <br>
+        <input type="submit" value="submit">
+        <br>
+        <button>submit</button>
+    </form>
+    <br>
+    <hr>
+    <form action="Post" method="Post">
+        <h2>Form Example 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Lable</td>
+                    <td>Form Input</td>
+                    <td>Output</td>
+                </tr>
+
+            </thead>
+            <tr>
+                <td>Text Input</td>
+                <td><input type="Text" name="Text-Input"></td>
+                <td>Output</td>
+            <tr>
+                <td>Radio Button Input</td>
+                <td>
+                    <span>Yes:</span>
+                    <input type="Radio" name="Yes-No-Input" id="Yes" value="Yes">
+                    <Span>NO:</Span>
+                    <input type="Radio" name="Yes-No-Input" id="No" value="No">
+                    <span>Maybe:</span>
+                    <input type="Radio" name="Yes-No-Input" id="Maybe" value="Maybe">
+                </td>
+                <td>Output</td>
+            </tr>
+
+            <tr>
+                <td>Drop Down Input</td>
+                <td>
+                    <!-- Drop Down List-->
+                    <label for="Fruit">Choose a Fruit</label>
+                    <select name="Fruit" id="Fruit">
+                        <option value="Apple">Apple</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Pear">Pear</option>
+                        <option value="Plum">Plum</option>
+                        <option value="Pineapple">Pineapple</option>
+                    </select>
+                </td>
+                <td>Output</td>
+            </tr>
+
+            <tr>
+                <td>Text Area Input</td>
+                <td>
+                    <textarea name="Message" id="Message" cols="30" rows="10"
+                        placeholder="Enter Text Here.."></textarea>
+                </td>
+                <td>Output</td>
+            </tr>
+
+            <tr>
+                <td>Password Input</td>
+                <td>
+                    <input type="Password" name="Password" id="">
+                </td>
+                <td>Output</td>
+            </tr>
+            <br>
+            <tr>
+                <td>Checkbox Input</td>
+                <td>
+                    <label for="Checkbox-input1">Do you have a car?</label>
+                    <input type="submit" name="Button-Input" value="">
+                    <br>
+                    <label for="Checkbox-input2">Do you have a motorcycle?</label>
+                    <input type="submit" name="Button-Input" value="">
+                    <label for="Checkbox-input3">Do you have a bicycle?</label>
+                    <input type="submit" name="Button-Input" value="">
+                    <br>
+                    <label for="Checkbox-input4">Do you have a skateboard?</label>
+                    <input type="submit" name="Button-Input" value="">
+                </td>
+
+                <td>Output</td>
+                <br>
+            </tr>
+            <tr>
+                <td>Date Input</td>
+                <td>
+                    <input type="Date" name="Date-Input" id="">
+                </td>
+                <td>Output</td>
+            </tr>
+            <tr>
+                <td>Password Input</td>
+                <td>
+                    <input type="Time" name="Time-Input" id="">
+                </td>
+                <td>Output</td>
+            </tr>
+            <tr>
+                <td>Color Input</td>
+                <td>
+                    <input type="Color" name="Color-Input" id="">
+                </td>
+                <td>Output</td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>Button Input</td>
+                <td><input type="submit" name="Button-Input" value="Basic-Button"></td>
+                <td>Output</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>

@@ -57,6 +57,83 @@
     for(let i = 0; i<drinks.lenght; i ++){
            console.log(`Drink:${drinks[i]}, Drink Type: ${drinkTypes[i]}`)
         }
+
+        //2Dimensional Arrays
+        var drinksAndTypes = [];
+        drinksAndTypes[0] = drinks;
+        drinkTypes[1] = drinkTypes;
+
+        for(let i = 0; i < drinks.length; i++){
+            console.log(drinksAndTypes[0][i], drinkTypes[1][i]);
+        }
+
+        //Associative Array
+        var sportsTeams =[];
+        sportsTeams["Baseball"] = "Red Sox";
+        sportsTeams["Basketball"] = "Celtics";
+        sportsTeams["Football"] = "Patriots";
+        sportsTeams["Hockey"] = "Bruins";
+
+        console.log(sportsTeams["Hockey"]);
+
+        // Javascript Object notaion example
+        var tigerKingCastMember = {
+            name:"Joe Exotic the Tiger King",
+            occupation:"Tiger Handler",
+            residence:"Oklahoma",
+            incareserated: true,
+            lovesTIgers: true,
+            age: 62,
+            sayHello:function(){
+                console.log(`Hello from ${this.name}`)
+            }
+        }
+
+         var tigerKingCastMember2 = {
+            name:"Carole Baskin",
+            occupation:"CEO Big Cat Rescue",
+            residence:"Florida",
+            incareserated: false,
+            lovesTIgers: false,
+            age: 63
+        }
+
+         var tigerKingCastMember3 = {
+            name:"Jeff Lowe",
+            occupation:"Con Man",
+            residence:"Oklahoma",
+            incareserated: true,
+            lovesTIgers: true,
+            age: 67
+        }
+
+         var tigerKingCastMember4 = {
+            name:"Don Lewis",
+            occupation:"Tiger Handler",
+            residence:"Florida",
+            incareserated: false,
+            lovesTIgers: true,
+            age: 84
+        }
+
+        var characters= [
+            tigerKingCastMember,
+            tigerKingCastMember2,
+            tigerKingCastMember3,
+            tigerKingCastMember4,
+        ]
+
+        //Example of forEach loop
+        characters.forEach(function(item, character){
+            console.log(item.name, item.occupation, item.incareserated);
+        });
+
+        // Example of for in loop
+        for(let key in characters){
+            console.log(key);
+            page.innerHTML += `<P>Name:${characters[key].name}, AGE:${characters[key].age}, Occupation:${characters[key].occupation}</p>`;
+        }
+
     </script>
     
 </body>
